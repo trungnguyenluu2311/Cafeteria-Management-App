@@ -16,5 +16,11 @@ namespace QuanLyQuanCafe
 		{
 			InitializeComponent();
 		}
+
+		private void panel1_Click(object sender, EventArgs e)
+		{
+			Form form = new frmChiTietDatMon();
+			form.Show();
+		}
 	}
 }

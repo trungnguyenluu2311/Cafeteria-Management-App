@@ -17,6 +17,10 @@ namespace QuanLyQuanCafe
 			InitializeComponent();
 		}
 
-	
+		private void button5_Click(object sender, EventArgs e)
+		{
+			Form form = new frmThemNguyenLieuMoi();
+			form.Show();
+		}
 	}
 }

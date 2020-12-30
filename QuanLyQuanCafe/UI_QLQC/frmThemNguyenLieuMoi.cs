@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLyQuanCafe
 {
-	public partial class frmThemNguyenLieuMoi : Form
-	{
-		public frmThemNguyenLieuMoi()
-		{
-			InitializeComponent();
-		}
-	}
+    public partial class frmThemNguyenLieuMoi: Form
+    {
+        public frmThemNguyenLieuMoi()
+        {
+            InitializeComponent();
+        }
+    }
 }

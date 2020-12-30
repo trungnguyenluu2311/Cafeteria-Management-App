@@ -10,13 +10,16 @@ using System.Windows.Forms;
 
 namespace QuanLyQuanCafe
 {
-	public partial class frmDatMon : Form
+	public partial class frmChiTietDatMon : Form
 	{
-		public frmDatMon()
+		public frmChiTietDatMon()
 		{
 			InitializeComponent();
 		}
 
-		
+		private void richTextBox1_Click(object sender, EventArgs e)
+		{
+			richTextBox1.Text = "";
+		}
 	}
 }
