@@ -46,63 +46,63 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmBaoCao.cs">
+    <Compile Include="UI_QLQC\frmBaoCao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmBaoCao.Designer.cs">
+    <Compile Include="UI_QLQC\frmBaoCao.Designer.cs">
       <DependentUpon>frmBaoCao.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDatMon.cs">
+    <Compile Include="UI_QLQC\frmDatMon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDatMon.Designer.cs">
+    <Compile Include="UI_QLQC\frmDatMon.Designer.cs">
       <DependentUpon>frmDatMon.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMain.cs">
+    <Compile Include="UI_QLQC\frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMain.Designer.cs">
+    <Compile Include="UI_QLQC\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmNhapNguyenLieu.cs">
+    <Compile Include="UI_QLQC\frmNhapNguyenLieu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmNhapNguyenLieu.Designer.cs">
+    <Compile Include="UI_QLQC\frmNhapNguyenLieu.Designer.cs">
       <DependentUpon>frmNhapNguyenLieu.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmThemNguyenLieuMoi.cs">
+    <Compile Include="UI_QLQC\frmThemNguyenLieuMoi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmThemNguyenLieuMoi.Designer.cs">
+    <Compile Include="UI_QLQC\frmThemNguyenLieuMoi.Designer.cs">
       <DependentUpon>frmThemNguyenLieuMoi.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="frmQuanLyNguyenLieu.cs">
+    <Compile Include="UI_QLQC\frmQuanLyNguyenLieu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmQuanLyNguyenLieu.Designer.cs">
+    <Compile Include="UI_QLQC\frmQuanLyNguyenLieu.Designer.cs">
       <DependentUpon>frmQuanLyNguyenLieu.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThucUong.cs">
+    <Compile Include="UI_QLQC\ThucUong.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ThucUong.Designer.cs">
+    <Compile Include="UI_QLQC\ThucUong.Designer.cs">
       <DependentUpon>ThucUong.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmDatMon.resx">
+    <EmbeddedResource Include="UI_QLQC\frmDatMon.resx">
       <DependentUpon>frmDatMon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMain.resx">
+    <EmbeddedResource Include="UI_QLQC\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmNhapNguyenLieu.resx">
+    <EmbeddedResource Include="UI_QLQC\frmNhapNguyenLieu.resx">
       <DependentUpon>frmNhapNguyenLieu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmQuanLyNguyenLieu.resx">
+    <EmbeddedResource Include="UI_QLQC\frmQuanLyNguyenLieu.resx">
       <DependentUpon>frmQuanLyNguyenLieu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmThemNguyenLieuMoi.resx">
+    <EmbeddedResource Include="UI_QLQC\frmThemNguyenLieuMoi.resx">
       <DependentUpon>frmThemNguyenLieuMoi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -126,6 +126,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BUS_QLQC\" />
+    <Folder Include="DAL_QLQC\" />
+    <Folder Include="DTO_QCQC\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
