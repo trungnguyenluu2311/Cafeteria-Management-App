@@ -16,5 +16,17 @@ namespace QuanLyQuanCafe
 		{
 			InitializeComponent();
 		}
+
+
+		private void buttonNhapNguyenLieu_Click(object sender, EventArgs e)
+		{
+			Form form = new frmNhapNguyenLieu();
+			form.Show();
+		}
+
+		private void textBox1_Click(object sender, EventArgs e)
+		{
+			textBox1.Text = "";
+		}
 	}
 }

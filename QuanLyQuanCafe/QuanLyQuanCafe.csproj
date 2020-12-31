@@ -81,6 +81,12 @@
     <Compile Include="UI_QLQC\frmBaoCao.Designer.cs">
       <DependentUpon>frmBaoCao.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI_QLQC\frmChiTietDatMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_QLQC\frmChiTietDatMon.Designer.cs">
+      <DependentUpon>frmChiTietDatMon.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI_QLQC\frmDatMon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,18 @@
     <Compile Include="UI_QLQC\ThucUong.Designer.cs">
       <DependentUpon>ThucUong.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI_QLQC\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI_QLQC\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI_QLQC\frmBaoCao.resx">
+      <DependentUpon>frmBaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_QLQC\frmChiTietDatMon.resx">
+      <DependentUpon>frmChiTietDatMon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI_QLQC\frmDatMon.resx">
       <DependentUpon>frmDatMon.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,7 +160,14 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UI_QLQC\ThucUong.resx">
+      <DependentUpon>ThucUong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_QLQC\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -156,6 +181,22 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="BUS_QLQC\" />
+    <Folder Include="DAL_QLQC\" />
+    <Folder Include="DTO_QCQC\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\americano.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+    <Content Include="Resources\cappuccino.jpg" />
+    <Content Include="Resources\caramel_macchiato.jpg" />
+    <Content Include="Resources\espresso.jpg" />
+    <Content Include="Resources\latte.jpg" />
+    <None Include="Resources\loupe.png" />
+    <Content Include="Resources\mocha.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
