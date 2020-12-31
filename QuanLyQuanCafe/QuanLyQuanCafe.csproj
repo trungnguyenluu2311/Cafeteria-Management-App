@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,6 +47,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS_QLQC\BUS_HoaDon.cs" />
+    <Compile Include="BUS_QLQC\BUS_NguyenLieu.cs" />
+    <Compile Include="BUS_QLQC\BUS_NhanVien.cs" />
+    <Compile Include="BUS_QLQC\BUS_NhanVienPhucVu.cs" />
+    <Compile Include="BUS_QLQC\BUS_NhanVienQuanLy.cs" />
+    <Compile Include="BUS_QLQC\BUS_PhieuNhapNguyenLieu.cs" />
+    <Compile Include="DAL_QLQC\DAL_ChiTietHoaDon.cs" />
+    <Compile Include="DAL_QLQC\DAL_ChiTietPhaChe.cs" />
+    <Compile Include="DAL_QLQC\DAL_ChiTietPhieuNhap.cs" />
+    <Compile Include="DAL_QLQC\DAL_ChiTietThucUong.cs" />
+    <Compile Include="DAL_QLQC\DAL_HoaDon.cs" />
+    <Compile Include="DAL_QLQC\DAL_NguyenLieu.cs" />
+    <Compile Include="DAL_QLQC\DAL_NhanVien.cs" />
+    <Compile Include="DAL_QLQC\DAL_PhieuNhapNguyenLieu.cs" />
+    <Compile Include="DAL_QLQC\DAL_ThucUong.cs" />
+    <Compile Include="DAL_QLQC\HandleDB.cs" />
+    <Compile Include="DTO_QCQC\DTO_ChiTietHoaDon.cs" />
+    <Compile Include="DTO_QCQC\DTO_ChiTietPhaChe.cs" />
+    <Compile Include="DTO_QCQC\DTO_ChiTietPhieuNhap.cs" />
+    <Compile Include="DTO_QCQC\DTO_BaoCao.cs" />
+    <Compile Include="DTO_QCQC\DTO_ChiTietThucUong.cs" />
+    <Compile Include="DTO_QCQC\DTO_HoaDon.cs" />
+    <Compile Include="DTO_QCQC\DTO_NguyenLieu.cs" />
+    <Compile Include="DTO_QCQC\DTO_NhanVien.cs" />
+    <Compile Include="DTO_QCQC\DTO_NhanVienPhucVu.cs" />
+    <Compile Include="DTO_QCQC\DTO_NhanVienQuanLy.cs" />
+    <Compile Include="DTO_QCQC\DTO_PhieuNhapNguyenLieu.cs" />
+    <Compile Include="DTO_QCQC\DTO_ThucUong.cs" />
     <Compile Include="UI_QLQC\frmBaoCao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,10 +156,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BUS_QLQC\" />
-    <Folder Include="DAL_QLQC\" />
-    <Folder Include="DTO_QCQC\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
