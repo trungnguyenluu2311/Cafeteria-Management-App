@@ -58,4 +58,10 @@ namespace QuanLyQuanCafe
 				textBox1.Text = "<Tên nguyên liệu>";
         }
     }
+		private void button1_Click(object sender, EventArgs e)
+		{
+			frmSuaNguyenLieu frmSuaNguyenLieu = new frmSuaNguyenLieu();
+			frmSuaNguyenLieu.Show();
+		}
+	}
 }

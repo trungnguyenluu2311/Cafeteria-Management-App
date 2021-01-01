@@ -29,9 +29,12 @@
 		private void InitializeComponent()
 		{
 			this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+			this.thucUong1 = new QuanLyQuanCafe.ThucUong();
+			this.thucUong2 = new QuanLyQuanCafe.ThucUong();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.label8 = new System.Windows.Forms.Label();
 			this.panel2 = new System.Windows.Forms.Panel();
+			this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
 			this.label7 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
 			this.button1 = new System.Windows.Forms.Button();
@@ -40,14 +43,9 @@
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this.thucUong1 = new QuanLyQuanCafe.ThucUong();
-			this.thucUong2 = new QuanLyQuanCafe.ThucUong();
-			this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-			this.userControl11 = new QuanLyQuanCafe.UserControl1();
 			this.flowLayoutPanel1.SuspendLayout();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
-			this.flowLayoutPanel2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// flowLayoutPanel1
@@ -60,6 +58,24 @@
 			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
 			this.flowLayoutPanel1.Size = new System.Drawing.Size(606, 496);
 			this.flowLayoutPanel1.TabIndex = 0;
+			// 
+			// thucUong1
+			// 
+			this.thucUong1.BackColor = System.Drawing.Color.White;
+			this.thucUong1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.thucUong1.Location = new System.Drawing.Point(3, 3);
+			this.thucUong1.Name = "thucUong1";
+			this.thucUong1.Size = new System.Drawing.Size(295, 130);
+			this.thucUong1.TabIndex = 0;
+			// 
+			// thucUong2
+			// 
+			this.thucUong2.BackColor = System.Drawing.Color.White;
+			this.thucUong2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.thucUong2.Location = new System.Drawing.Point(304, 3);
+			this.thucUong2.Name = "thucUong2";
+			this.thucUong2.Size = new System.Drawing.Size(295, 130);
+			this.thucUong2.TabIndex = 1;
 			// 
 			// panel1
 			// 
@@ -104,6 +120,15 @@
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(578, 593);
 			this.panel2.TabIndex = 3;
+			// 
+			// flowLayoutPanel2
+			// 
+			this.flowLayoutPanel2.BackColor = System.Drawing.Color.White;
+			this.flowLayoutPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.flowLayoutPanel2.Location = new System.Drawing.Point(14, 83);
+			this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+			this.flowLayoutPanel2.Size = new System.Drawing.Size(522, 343);
+			this.flowLayoutPanel2.TabIndex = 11;
 			// 
 			// label7
 			// 
@@ -189,44 +214,6 @@
 			this.label1.TabIndex = 2;
 			this.label1.Text = "Ngày tạo";
 			// 
-			// thucUong1
-			// 
-			this.thucUong1.BackColor = System.Drawing.Color.White;
-			this.thucUong1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.thucUong1.Location = new System.Drawing.Point(3, 3);
-			this.thucUong1.Name = "thucUong1";
-			this.thucUong1.Size = new System.Drawing.Size(295, 130);
-			this.thucUong1.TabIndex = 0;
-			// 
-			// thucUong2
-			// 
-			this.thucUong2.BackColor = System.Drawing.Color.White;
-			this.thucUong2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.thucUong2.Location = new System.Drawing.Point(304, 3);
-			this.thucUong2.Name = "thucUong2";
-			this.thucUong2.Size = new System.Drawing.Size(295, 130);
-			this.thucUong2.TabIndex = 1;
-			// 
-			// flowLayoutPanel2
-			// 
-			this.flowLayoutPanel2.BackColor = System.Drawing.Color.White;
-			this.flowLayoutPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.flowLayoutPanel2.Controls.Add(this.userControl11);
-			this.flowLayoutPanel2.Location = new System.Drawing.Point(14, 83);
-			this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-			this.flowLayoutPanel2.Size = new System.Drawing.Size(522, 343);
-			this.flowLayoutPanel2.TabIndex = 11;
-			// 
-			// userControl11
-			// 
-			this.userControl11.BackColor = System.Drawing.Color.White;
-			this.userControl11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-			this.userControl11.Location = new System.Drawing.Point(4, 4);
-			this.userControl11.Margin = new System.Windows.Forms.Padding(4);
-			this.userControl11.Name = "userControl11";
-			this.userControl11.Size = new System.Drawing.Size(517, 51);
-			this.userControl11.TabIndex = 0;
-			// 
 			// frmDatMon
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -242,7 +229,6 @@
 			this.panel1.PerformLayout();
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
-			this.flowLayoutPanel2.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -264,6 +250,5 @@
 		private ThucUong thucUong1;
 		private ThucUong thucUong2;
 		private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-		private UserControl1 userControl11;
 	}
 }
