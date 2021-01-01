@@ -32,5 +32,13 @@ namespace QuanLyQuanCafe.BUS_QLQC
         {
             return DAL_NguyenLieu.Instance.getDanhSachNguyenLieuCanKiemTra();
         }
+        public DataTable LayDanhSachNguyenLieu()
+        {
+            return DAL_NguyenLieu.Instance.getDanhSach();
+        }
+        public DataTable TimNguyenLieu(string TenNL)
+        {
+            return DAL_NguyenLieu.Instance.getDanhSach(TenNL);
+        }
     }
 }
