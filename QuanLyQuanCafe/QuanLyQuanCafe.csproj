@@ -46,6 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UI_QLQC\frmSuaMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_QLQC\frmSuaMon.Designer.cs">
+      <DependentUpon>frmSuaMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_QLQC\frmSuaNguyenLieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_QLQC\frmSuaNguyenLieu.Designer.cs">
+      <DependentUpon>frmSuaNguyenLieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_QLQC\frmSuaNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_QLQC\frmSuaNhanVien.Designer.cs">
+      <DependentUpon>frmSuaNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_QLQC\frmThemMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_QLQC\frmThemMon.Designer.cs">
+      <DependentUpon>frmThemMon.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI_QLQC\frmBaoCao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +81,12 @@
     </Compile>
     <Compile Include="UI_QLQC\frmChiTietDatMon.Designer.cs">
       <DependentUpon>frmChiTietDatMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_QLQC\frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_QLQC\frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="UI_QLQC\frmDatMon.cs">
       <SubType>Form</SubType>
@@ -76,6 +106,18 @@
     <Compile Include="UI_QLQC\frmNhapNguyenLieu.Designer.cs">
       <DependentUpon>frmNhapNguyenLieu.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI_QLQC\frmQuanLyMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_QLQC\frmQuanLyMon.Designer.cs">
+      <DependentUpon>frmQuanLyMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_QLQC\frmQuanLyNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_QLQC\frmQuanLyNhanVien.Designer.cs">
+      <DependentUpon>frmQuanLyNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI_QLQC\frmThemNguyenLieuMoi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +131,12 @@
     </Compile>
     <Compile Include="UI_QLQC\frmQuanLyNguyenLieu.Designer.cs">
       <DependentUpon>frmQuanLyNguyenLieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_QLQC\frmThemNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_QLQC\frmThemNhanVien.Designer.cs">
+      <DependentUpon>frmThemNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="UI_QLQC\ThucUong.cs">
       <SubType>UserControl</SubType>
@@ -108,6 +156,9 @@
     <EmbeddedResource Include="UI_QLQC\frmChiTietDatMon.resx">
       <DependentUpon>frmChiTietDatMon.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI_QLQC\frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI_QLQC\frmDatMon.resx">
       <DependentUpon>frmDatMon.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,8 +168,26 @@
     <EmbeddedResource Include="UI_QLQC\frmNhapNguyenLieu.resx">
       <DependentUpon>frmNhapNguyenLieu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI_QLQC\frmQuanLyMon.resx">
+      <DependentUpon>frmQuanLyMon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI_QLQC\frmQuanLyNguyenLieu.resx">
       <DependentUpon>frmQuanLyNguyenLieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_QLQC\frmQuanLyNhanVien.resx">
+      <DependentUpon>frmQuanLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_QLQC\frmSuaMon.resx">
+      <DependentUpon>frmSuaMon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_QLQC\frmSuaNguyenLieu.resx">
+      <DependentUpon>frmSuaNguyenLieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_QLQC\frmSuaNhanVien.resx">
+      <DependentUpon>frmSuaNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_QLQC\frmThemMon.resx">
+      <DependentUpon>frmThemMon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI_QLQC\frmThemNguyenLieuMoi.resx">
       <DependentUpon>frmThemNguyenLieuMoi.cs</DependentUpon>
@@ -133,6 +202,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UI_QLQC\frmThemNhanVien.resx">
+      <DependentUpon>frmThemNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI_QLQC\ThucUong.resx">
       <DependentUpon>ThucUong.cs</DependentUpon>
     </EmbeddedResource>

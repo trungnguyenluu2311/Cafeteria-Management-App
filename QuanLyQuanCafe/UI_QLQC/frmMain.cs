@@ -47,5 +47,23 @@ namespace QuanLyQuanCafe
 		{
 			OpenForm(new frmBaoCao());
 		}
+
+		private void buttonQuanLyNhanVien_Click(object sender, EventArgs e)
+		{
+			OpenForm(new frmQuanLyNhanVien());
+		}
+
+		private void frmMain_Load(object sender, EventArgs e)
+		{
+			frmDangNhap login = new frmDangNhap();
+			login.ShowDialog();
+			if (login.DialogResult != DialogResult.OK)
+				this.Close();
+		}
+
+		private void buttonQuanLyMon_Click(object sender, EventArgs e)
+		{
+			OpenForm(new frmQuanLyMon());
+		}
 	}
 }
