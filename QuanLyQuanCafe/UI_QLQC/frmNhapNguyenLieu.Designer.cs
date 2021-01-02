@@ -82,12 +82,16 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(286, 78);
+            this.comboBox1.Location = new System.Drawing.Point(294, 78);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(230, 28);
+            this.comboBox1.Size = new System.Drawing.Size(222, 28);
             this.comboBox1.TabIndex = 2;
+            this.comboBox1.DropDown += new System.EventHandler(this.comboBox1_DropDown);
             // 
             // textBox1
             // 
@@ -193,10 +197,10 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(286, 144);
+            this.textBox2.Location = new System.Drawing.Point(294, 144);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(409, 26);
+            this.textBox2.Size = new System.Drawing.Size(401, 26);
             this.textBox2.TabIndex = 6;
             // 
             // button4
@@ -211,6 +215,7 @@
             this.button4.TabIndex = 5;
             this.button4.Text = "Chọn";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // frmNhapNguyenLieu
             // 

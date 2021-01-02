@@ -7,12 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
+using QuanLyQuanCafe.DTO_QCQC;
+using QuanLyQuanCafe.BUS_QLQC;
 
 namespace QuanLyQuanCafe
 {
-	public partial class frmMain : Form
+	public partial class frmMainQuanLy : Form
 	{
-		public frmMain()
+		public DTO_NhanVien nv;
+		BUS_NhanVienQuanLy busnvql = new BUS_NhanVienQuanLy();
+		public frmMainQuanLy()
 		{
 			InitializeComponent();
 		}
@@ -38,11 +43,6 @@ namespace QuanLyQuanCafe
             OpenForm(new frmQuanLyNguyenLieu());
 		}
 
-		private void buttonDatMon_Click(object sender, EventArgs e)
-		{
-            OpenForm(new frmDatMon());
-		}
-
 		private void buttonBaoCao_Click(object sender, EventArgs e)
 		{
 			OpenForm(new frmBaoCao());
@@ -55,10 +55,7 @@ namespace QuanLyQuanCafe
 
 		private void frmMain_Load(object sender, EventArgs e)
 		{
-			frmDangNhap login = new frmDangNhap();
-			login.ShowDialog();
-			if (login.DialogResult != DialogResult.OK)
-				this.Close();
+
 		}
 
 		private void buttonQuanLyMon_Click(object sender, EventArgs e)

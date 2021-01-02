@@ -147,5 +147,21 @@ namespace QuanLyQuanCafe.DAL_QLQC
                 MessageBox.Show(e.ToString());
             }
         }
+        public void xoaNguyenLieu(string MaNL)
+        {
+            try
+            {
+                Dictionary<string, string> param = new Dictionary<string, string>();
+
+                string procedure = "NGUYENLIEU_DELETE";
+                param.Add("@MaNL", MaNL);
+
+                HandleDB.Instance.ExecuteNonQueryProcedure(procedure, param);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+            }
+        }
     }
 }

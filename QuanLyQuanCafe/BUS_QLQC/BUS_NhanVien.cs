@@ -10,9 +10,9 @@ namespace QuanLyQuanCafe.BUS_QLQC
 {
     class BUS_NhanVien
     {
-        public bool DangNhap(DTO_NhanVien nv)
+        public DTO_NhanVien DangNhap(DTO_NhanVien nv)
         {
-            return DAL_NhanVien.Instance.isHaveNV(nv);
+            return DAL_NhanVien.Instance.DangNhap(nv);
         }
         public bool ThayDoiMatKhau(DTO_NhanVien nv)
         {

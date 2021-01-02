@@ -27,7 +27,26 @@ namespace QuanLyQuanCafe
 
         private void frmNhapNguyenLieu_Load(object sender, EventArgs e)
         {
-			dataGridView1.DataSource = busNL.LayDanhSachNguyenLieu();
+			comboBox1.DataSource = busNL.LayDanhSachNguyenLieu().DefaultView;
+			comboBox1.DisplayMember = "TEN";
+			comboBox1.BindingContext = this.BindingContext;
+			//dataGridView1.DataSource = busNL.LayDanhSachNguyenLieu();
+		}
+
+        private void comboBox1_DropDown(object sender, EventArgs e)
+        {
+			comboBox1.DataSource = busNL.LayDanhSachNguyenLieu().DefaultView;
+			comboBox1.DisplayMember = "TEN";
+			comboBox1.BindingContext = this.BindingContext;
+		}
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+			OpenFileDialog dialog = new OpenFileDialog();
+			dialog.Multiselect = false;
+			dialog.Filter = "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
+			if (dialog.ShowDialog() == DialogResult.OK)
+				textBox2.Text = dialog.FileName;
         }
     }
 }

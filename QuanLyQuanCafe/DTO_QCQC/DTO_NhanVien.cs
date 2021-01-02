@@ -19,6 +19,8 @@ namespace QuanLyQuanCafe.DTO_QCQC
         public string MatKhau { get; set; }
         public string Loai { get; set; }
 
+        public DTO_NhanVien()
+        { }
         public DTO_NhanVien(string maNhanVien, string ten, string ho, string soCMND, string diaChi, string soDienThoai, DateTime ngayVaoLam, long luong, string matKhau, string loai)
         {
             MaNhanVien = maNhanVien;

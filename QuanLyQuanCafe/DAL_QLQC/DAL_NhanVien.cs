@@ -56,7 +56,7 @@ namespace QuanLyQuanCafe.DAL_QLQC
                 return null;
             }
         }
-        public bool isHaveNV(DTO_NhanVien nv)
+        public DTO_NhanVien DangNhap(DTO_NhanVien nv)
         {
             try
             {
@@ -66,15 +66,28 @@ namespace QuanLyQuanCafe.DAL_QLQC
                 param.Add("@Sdt", nv.SoDienThoai);
                 param.Add("@MatKhau", nv.MatKhau);
 
-                int result = Convert.ToInt32(HandleDB.Instance.ExecuteNonQueryProcedure(procedure, param));
-                if (result == 0)
-                    return false;
-                return true;
+                DataTable result = HandleDB.Instance.ExecuteQueryProcedure(procedure, param);
+                if (result.Rows.Count != 0)
+                {
+                    DTO_NhanVien resultnv = new DTO_NhanVien();
+                    resultnv.MaNhanVien = result.Rows[0]["MANV"].ToString();
+                    resultnv.Ten = result.Rows[0]["TEN"].ToString();
+                    resultnv.Ho = result.Rows[0]["HO"].ToString();
+                    resultnv.SoCMND = result.Rows[0]["SOCMND"].ToString();
+                    resultnv.DiaChi = result.Rows[0]["DIACHI"].ToString();
+                    resultnv.SoDienThoai = result.Rows[0]["SDT"].ToString();
+                    resultnv.NgayVaoLam = DateTime.Parse(result.Rows[0]["NGAYVAOLAM"].ToString());
+                    resultnv.Luong = Convert.ToInt64(result.Rows[0]["LUONG"]);
+                    resultnv.Loai = result.Rows[0]["LOAINV"].ToString();
+                    return resultnv;
+                }
+                else
+                    return null;
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.ToString());
-                return false;
+                return null;
             }
         }
         public bool themNhanVien(DTO_NhanVien nv)
