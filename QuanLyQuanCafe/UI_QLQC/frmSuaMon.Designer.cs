@@ -29,8 +29,8 @@
 		private void InitializeComponent()
 		{
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.label2 = new System.Windows.Forms.Label();
 			this.panel2 = new System.Windows.Forms.Panel();
+			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.textBox2 = new System.Windows.Forms.TextBox();
@@ -61,16 +61,6 @@
 			this.panel1.Size = new System.Drawing.Size(694, 115);
 			this.panel1.TabIndex = 4;
 			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-			this.label2.Location = new System.Drawing.Point(370, 59);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(35, 20);
-			this.label2.TabIndex = 5;
-			this.label2.Text = "Giá";
-			// 
 			// panel2
 			// 
 			this.panel2.BackColor = System.Drawing.Color.White;
@@ -83,6 +73,16 @@
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(694, 115);
 			this.panel2.TabIndex = 7;
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+			this.label2.Location = new System.Drawing.Point(370, 59);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(35, 20);
+			this.label2.TabIndex = 5;
+			this.label2.Text = "Giá";
 			// 
 			// label1
 			// 
@@ -106,7 +106,7 @@
 			this.textBox2.Location = new System.Drawing.Point(469, 59);
 			this.textBox2.Name = "textBox2";
 			this.textBox2.Size = new System.Drawing.Size(206, 22);
-			this.textBox2.TabIndex = 6;
+			this.textBox2.TabIndex = 2;
 			// 
 			// panel3
 			// 
@@ -140,7 +140,7 @@
 			this.textBox4.Location = new System.Drawing.Point(468, 23);
 			this.textBox4.Name = "textBox4";
 			this.textBox4.Size = new System.Drawing.Size(206, 22);
-			this.textBox4.TabIndex = 19;
+			this.textBox4.TabIndex = 4;
 			this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
 			// 
 			// textBox3
@@ -148,7 +148,7 @@
 			this.textBox3.Location = new System.Drawing.Point(170, 23);
 			this.textBox3.Name = "textBox3";
 			this.textBox3.Size = new System.Drawing.Size(193, 22);
-			this.textBox3.TabIndex = 18;
+			this.textBox3.TabIndex = 3;
 			this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
 			// 
 			// label3

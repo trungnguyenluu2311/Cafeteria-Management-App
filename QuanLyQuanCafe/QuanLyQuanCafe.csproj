@@ -76,6 +76,12 @@
     <Compile Include="DTO_QCQC\DTO_NhanVienQuanLy.cs" />
     <Compile Include="DTO_QCQC\DTO_PhieuNhapNguyenLieu.cs" />
     <Compile Include="DTO_QCQC\DTO_ThucUong.cs" />
+    <Compile Include="UI_QLQC\frmQuanLyHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_QLQC\frmQuanLyHoaDon.Designer.cs">
+      <DependentUpon>frmQuanLyHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI_QLQC\frmBaoCao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI_QLQC\frmNhapNguyenLieu.resx">
       <DependentUpon>frmNhapNguyenLieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_QLQC\frmQuanLyHoaDon.resx">
+      <DependentUpon>frmQuanLyHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI_QLQC\frmQuanLyMon.resx">
       <DependentUpon>frmQuanLyMon.cs</DependentUpon>

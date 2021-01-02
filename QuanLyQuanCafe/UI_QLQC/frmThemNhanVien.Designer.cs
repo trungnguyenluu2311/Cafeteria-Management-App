@@ -45,10 +45,10 @@
 			this.textBox7 = new System.Windows.Forms.TextBox();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
 			this.button1 = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			this.button3 = new System.Windows.Forms.Button();
-			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
@@ -142,49 +142,49 @@
 			this.comboBox1.Location = new System.Drawing.Point(167, 52);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(245, 24);
-			this.comboBox1.TabIndex = 16;
+			this.comboBox1.TabIndex = 1;
 			// 
 			// textBox1
 			// 
 			this.textBox1.Location = new System.Drawing.Point(167, 96);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(245, 22);
-			this.textBox1.TabIndex = 17;
+			this.textBox1.TabIndex = 2;
 			// 
 			// textBox2
 			// 
 			this.textBox2.Location = new System.Drawing.Point(167, 137);
 			this.textBox2.Name = "textBox2";
 			this.textBox2.Size = new System.Drawing.Size(245, 22);
-			this.textBox2.TabIndex = 18;
+			this.textBox2.TabIndex = 3;
 			// 
 			// textBox3
 			// 
 			this.textBox3.Location = new System.Drawing.Point(167, 184);
 			this.textBox3.Name = "textBox3";
 			this.textBox3.Size = new System.Drawing.Size(245, 22);
-			this.textBox3.TabIndex = 19;
+			this.textBox3.TabIndex = 4;
 			// 
 			// textBox4
 			// 
 			this.textBox4.Location = new System.Drawing.Point(167, 231);
 			this.textBox4.Name = "textBox4";
 			this.textBox4.Size = new System.Drawing.Size(245, 22);
-			this.textBox4.TabIndex = 20;
+			this.textBox4.TabIndex = 5;
 			// 
 			// textBox6
 			// 
 			this.textBox6.Location = new System.Drawing.Point(525, 52);
 			this.textBox6.Name = "textBox6";
 			this.textBox6.Size = new System.Drawing.Size(245, 22);
-			this.textBox6.TabIndex = 22;
+			this.textBox6.TabIndex = 6;
 			// 
 			// textBox7
 			// 
 			this.textBox7.Location = new System.Drawing.Point(525, 96);
 			this.textBox7.Name = "textBox7";
 			this.textBox7.Size = new System.Drawing.Size(245, 22);
-			this.textBox7.TabIndex = 23;
+			this.textBox7.TabIndex = 7;
 			// 
 			// dataGridView1
 			// 
@@ -193,7 +193,7 @@
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowHeadersWidth = 51;
 			this.dataGridView1.RowTemplate.Height = 24;
-			this.dataGridView1.Size = new System.Drawing.Size(744, 150);
+			this.dataGridView1.Size = new System.Drawing.Size(777, 150);
 			this.dataGridView1.TabIndex = 24;
 			// 
 			// panel1
@@ -218,13 +218,20 @@
 			this.panel1.Size = new System.Drawing.Size(801, 273);
 			this.panel1.TabIndex = 25;
 			// 
+			// dateTimePicker1
+			// 
+			this.dateTimePicker1.Location = new System.Drawing.Point(525, 135);
+			this.dateTimePicker1.Name = "dateTimePicker1";
+			this.dateTimePicker1.Size = new System.Drawing.Size(245, 22);
+			this.dateTimePicker1.TabIndex = 8;
+			// 
 			// button1
 			// 
 			this.button1.AutoSize = true;
 			this.button1.BackColor = System.Drawing.Color.White;
 			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
 			this.button1.ForeColor = System.Drawing.Color.OrangeRed;
-			this.button1.Location = new System.Drawing.Point(681, 279);
+			this.button1.Location = new System.Drawing.Point(714, 279);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(75, 30);
 			this.button1.TabIndex = 26;
@@ -237,7 +244,7 @@
 			this.button2.BackColor = System.Drawing.Color.White;
 			this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
 			this.button2.ForeColor = System.Drawing.Color.OrangeRed;
-			this.button2.Location = new System.Drawing.Point(600, 279);
+			this.button2.Location = new System.Drawing.Point(633, 279);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(75, 30);
 			this.button2.TabIndex = 27;
@@ -250,19 +257,12 @@
 			this.button3.BackColor = System.Drawing.Color.White;
 			this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
 			this.button3.ForeColor = System.Drawing.Color.OrangeRed;
-			this.button3.Location = new System.Drawing.Point(681, 471);
+			this.button3.Location = new System.Drawing.Point(714, 471);
 			this.button3.Name = "button3";
 			this.button3.Size = new System.Drawing.Size(75, 30);
 			this.button3.TabIndex = 28;
 			this.button3.Text = "Lưu";
 			this.button3.UseVisualStyleBackColor = false;
-			// 
-			// dateTimePicker1
-			// 
-			this.dateTimePicker1.Location = new System.Drawing.Point(525, 135);
-			this.dateTimePicker1.Name = "dateTimePicker1";
-			this.dateTimePicker1.Size = new System.Drawing.Size(245, 22);
-			this.dateTimePicker1.TabIndex = 0;
 			// 
 			// frmThemNhanVien
 			// 

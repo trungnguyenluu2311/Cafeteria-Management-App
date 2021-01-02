@@ -89,7 +89,7 @@
 			this.comboBox1.Location = new System.Drawing.Point(394, 54);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(200, 24);
-			this.comboBox1.TabIndex = 4;
+			this.comboBox1.TabIndex = 2;
 			// 
 			// comboBox2
 			// 
@@ -97,7 +97,7 @@
 			this.comboBox2.Location = new System.Drawing.Point(83, 54);
 			this.comboBox2.Name = "comboBox2";
 			this.comboBox2.Size = new System.Drawing.Size(200, 24);
-			this.comboBox2.TabIndex = 5;
+			this.comboBox2.TabIndex = 1;
 			// 
 			// comboBox3
 			// 
@@ -105,7 +105,7 @@
 			this.comboBox3.Location = new System.Drawing.Point(715, 54);
 			this.comboBox3.Name = "comboBox3";
 			this.comboBox3.Size = new System.Drawing.Size(200, 24);
-			this.comboBox3.TabIndex = 6;
+			this.comboBox3.TabIndex = 3;
 			// 
 			// panel1
 			// 
