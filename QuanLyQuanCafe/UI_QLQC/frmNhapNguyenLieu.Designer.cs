@@ -93,7 +93,7 @@
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(222, 28);
-            this.comboBox1.TabIndex = 2;
+            this.comboBox1.TabIndex = 1;
             this.comboBox1.DropDown += new System.EventHandler(this.comboBox1_DropDown);
             // 
             // textBox1
@@ -102,7 +102,7 @@
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(160, 26);
-            this.textBox1.TabIndex = 3;
+            this.textBox1.TabIndex = 2;
             // 
             // button1
             // 
@@ -113,7 +113,7 @@
             this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 45);
-            this.button1.TabIndex = 4;
+            this.button1.TabIndex = 6;
             this.button1.Text = "Thêm";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -128,7 +128,7 @@
             this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(84, 45);
-            this.button2.TabIndex = 5;
+            this.button2.TabIndex = 8;
             this.button2.Text = "Lưu";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -142,7 +142,7 @@
             this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(84, 45);
-            this.button3.TabIndex = 4;
+            this.button3.TabIndex = 5;
             this.button3.Text = "Xóa";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -182,7 +182,7 @@
             this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(235, 45);
-            this.button5.TabIndex = 6;
+            this.button5.TabIndex = 7;
             this.button5.Text = "Thêm nguyên liệu mới";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -207,7 +207,7 @@
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(401, 26);
-            this.textBox2.TabIndex = 6;
+            this.textBox2.TabIndex = 3;
             // 
             // button4
             // 
@@ -218,7 +218,7 @@
             this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(84, 45);
-            this.button4.TabIndex = 5;
+            this.button4.TabIndex = 4;
             this.button4.Text = "Chọn";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);

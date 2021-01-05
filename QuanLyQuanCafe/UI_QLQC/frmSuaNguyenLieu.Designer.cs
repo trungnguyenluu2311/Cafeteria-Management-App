@@ -73,7 +73,7 @@
             this.textBox5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(277, 26);
-            this.textBox5.TabIndex = 10;
+            this.textBox5.TabIndex = 2;
             // 
             // label5
             // 
@@ -93,7 +93,7 @@
             this.textBox4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(277, 26);
-            this.textBox4.TabIndex = 8;
+            this.textBox4.TabIndex = 1;
             // 
             // button1
             // 
@@ -167,7 +167,7 @@
             this.txtThoiGianBaoQuan.Location = new System.Drawing.Point(712, 89);
             this.txtThoiGianBaoQuan.Name = "txtThoiGianBaoQuan";
             this.txtThoiGianBaoQuan.Size = new System.Drawing.Size(214, 26);
-            this.txtThoiGianBaoQuan.TabIndex = 3;
+            this.txtThoiGianBaoQuan.TabIndex = 4;
             this.txtThoiGianBaoQuan.Validating += new System.ComponentModel.CancelEventHandler(this.txtThoiGianBaoQuan_Validating);
             // 
             // txtTenNguyenLieu
@@ -175,7 +175,7 @@
             this.txtTenNguyenLieu.Location = new System.Drawing.Point(204, 31);
             this.txtTenNguyenLieu.Name = "txtTenNguyenLieu";
             this.txtTenNguyenLieu.Size = new System.Drawing.Size(277, 26);
-            this.txtTenNguyenLieu.TabIndex = 3;
+            this.txtTenNguyenLieu.TabIndex = 0;
             this.txtTenNguyenLieu.Validating += new System.ComponentModel.CancelEventHandler(this.txtTenNguyenLieu_Validating);
             // 
             // errorProvider_frmSuaNguyenLieu
