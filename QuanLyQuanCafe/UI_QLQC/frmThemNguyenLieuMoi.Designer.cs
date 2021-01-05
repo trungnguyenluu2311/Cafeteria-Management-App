@@ -1,33 +1,33 @@
 ﻿namespace QuanLyQuanCafe
 {
-	partial class frmThemNguyenLieuMoi
-	{
-		/// <summary>
-		/// Required designer variable.
-		/// </summary>
-		private System.ComponentModel.IContainer components = null;
+    partial class frmThemNguyenLieuMoi
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
 
-		/// <summary>
-		/// Clean up any resources being used.
-		/// </summary>
-		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing && (components != null))
-			{
-				components.Dispose();
-			}
-			base.Dispose(disposing);
-		}
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
-		#region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
             this.components = new System.ComponentModel.Container();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
@@ -268,21 +268,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider_frmThemNglieuMoi)).EndInit();
             this.ResumeLayout(false);
 
-		}
+        }
 
-		#endregion
-		private System.Windows.Forms.Button btnXoa;
-		private System.Windows.Forms.Button btnThem;
-		private System.Windows.Forms.Button btnLuu;
-		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.TextBox txtTenNguyenLieu;
-		private System.Windows.Forms.TextBox txtThoiGianBaoQuan;
-		private System.Windows.Forms.TextBox txtDonviTinh;
-		private System.Windows.Forms.Panel panel1;
-		private System.Windows.Forms.Panel panel2;
+        #endregion
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtTenNguyenLieu;
+        private System.Windows.Forms.TextBox txtThoiGianBaoQuan;
+        private System.Windows.Forms.TextBox txtDonviTinh;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txtSoLuongToiThieu;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtGhiChu;

@@ -1,33 +1,33 @@
 ﻿namespace QuanLyQuanCafe
 {
-	partial class frmSuaNhanVien
-	{
-		/// <summary>
-		/// Required designer variable.
-		/// </summary>
-		private System.ComponentModel.IContainer components = null;
+    partial class frmSuaNhanVien
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
 
-		/// <summary>
-		/// Clean up any resources being used.
-		/// </summary>
-		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing && (components != null))
-			{
-				components.Dispose();
-			}
-			base.Dispose(disposing);
-		}
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
-		#region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -270,29 +270,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider_frmSuaNhanVien)).EndInit();
             this.ResumeLayout(false);
 
-		}
+        }
 
-		#endregion
+        #endregion
 
-		private System.Windows.Forms.Panel panel1;
-		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Panel panel2;
-		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.DateTimePicker dateTimePicker1;
-		private System.Windows.Forms.Label label9;
-		private System.Windows.Forms.TextBox txtMatKhau;
-		private System.Windows.Forms.Label label8;
-		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.TextBox txtSoCmnd;
-		private System.Windows.Forms.TextBox txtLuong;
-		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.TextBox txtSdt;
-		private System.Windows.Forms.TextBox txtDiaChi;
-		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.ComboBox comboBox1;
-		private System.Windows.Forms.TextBox txtTenNhanVien;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtMatKhau;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtSoCmnd;
+        private System.Windows.Forms.TextBox txtLuong;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtSdt;
+        private System.Windows.Forms.TextBox txtDiaChi;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtTenNhanVien;
         private System.Windows.Forms.ErrorProvider errorProvider_frmSuaNhanVien;
     }
 }

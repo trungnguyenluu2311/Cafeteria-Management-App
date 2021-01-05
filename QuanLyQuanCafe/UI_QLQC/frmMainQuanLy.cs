@@ -64,5 +64,10 @@ namespace QuanLyQuanCafe
 		{
 			OpenForm(new frmQuanLyMon());
 		}
+
+		private void buttonQuanLyHoaDon_Click(object sender, EventArgs e)
+		{
+			OpenForm(new frmQuanLyHoaDon());
+		}
 	}
 }
