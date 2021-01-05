@@ -19,25 +19,27 @@ namespace QuanLyQuanCafe
 			InitializeComponent();
 		}
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnThem_Click(object sender, EventArgs e)
         {
-			if (MessageBox.Show("Bạn có chắc muốn thêm nhân viên?", "Cảnh báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
-			{
-				string LoaiNV = comboBox1.Text;
-				string HoNV = textBox5.Text;
-				string TenNV = txtTenNhanVien.Text;
-				string DiaChi = txtDiaChi.Text;
-				string Sdt = txtSdt.Text;
-				string Cmnd = txtSoCmnd.Text;
-				long Luong = Convert.ToInt64(txtLuong.Text);
-				string MatKhau = txtMatKhau.Text;
-				DateTime NgayVaoLam = dateTimePicker1.Value;
-				DTO_NhanVien nv = new DTO_NhanVien("", TenNV, HoNV, Cmnd, DiaChi, Sdt, NgayVaoLam, Luong, MatKhau, LoaiNV);
-				busNvql.themNhanVien(nv);
-				MessageBox.Show("Thêm thành công.", "Thông báo");
-				this.Close();
-			}
-
+            if (ValidateChildren(ValidationConstraints.Enabled))
+            {
+                if (MessageBox.Show("Bạn có chắc muốn thêm nhân viên?", "Cảnh báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    string LoaiNV = comboBox1.Text;
+                    string HoNV = textBox5.Text;
+                    string TenNV = txtTenNhanVien.Text;
+                    string DiaChi = txtDiaChi.Text;
+                    string Sdt = txtSdt.Text;
+                    string Cmnd = txtSoCmnd.Text;
+                    long Luong = Convert.ToInt64(txtLuong.Text);
+                    string MatKhau = txtMatKhau.Text;
+                    DateTime NgayVaoLam = dateTimePicker1.Value;
+                    DTO_NhanVien nv = new DTO_NhanVien("", TenNV, HoNV, Cmnd, DiaChi, Sdt, NgayVaoLam, Luong, MatKhau, LoaiNV);
+                    busNvql.themNhanVien(nv);
+                    MessageBox.Show("Thêm thành công.", "Thông báo");
+                    this.Close();
+                }
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -52,22 +54,6 @@ namespace QuanLyQuanCafe
 				e.Cancel = true;
 			}
 		}
-    public partial class frmThemNhanVien : Form
-    {
-        public frmThemNhanVien()
-        {
-            InitializeComponent();
-
-        }
-
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-            if (ValidateChildren(ValidationConstraints.Enabled))
-            {
-
-            }
-        }
-
         // Validate
         private void txtTenNhanVien_Validating(object sender, CancelEventArgs e)
         {
@@ -165,8 +151,6 @@ namespace QuanLyQuanCafe
                 errorProvider_frmThemNhanVien.SetError(txtMatKhau, "");
             }
         }
-
-       
     }
 }
 

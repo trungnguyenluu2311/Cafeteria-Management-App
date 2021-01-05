@@ -24,31 +24,27 @@ namespace QuanLyQuanCafe
 		private void frmSuaNguyenLieu_Load(object sender, EventArgs e)
 		{
 			txtTenNguyenLieu.Text = nl.TenNguyenLieu;
-			textBox2.Text = nl.ThoiGianBaoQuan.ToString();
+            txtThoiGianBaoQuan.Text = nl.ThoiGianBaoQuan.ToString();
 			txtDonviTinh.Text = nl.DonViTinh.ToString();
 			textBox4.Text = nl.SoLuongToiThieu.ToString();
 			textBox5.Text = nl.GhiChu;
 		}
 
-		private void button1_Click(object sender, EventArgs e)
-		{
-			nl.TenNguyenLieu = txtTenNguyenLieu.Text;
-			nl.ThoiGianBaoQuan = Convert.ToInt32(txtThoiGianBaoQuan.Text);
-			nl.DonViTinh = txtDonviTinh.Text;
-			nl.SoLuongToiThieu = Convert.ToInt64(textBox4.Text);
-			nl.GhiChu = textBox5.Text;
-			if (MessageBox.Show("Bạn có chắc muốn cập nhật thông tin mới?", "Cập nhật thông tin", MessageBoxButtons.YesNo) == DialogResult.Yes)
-			{
-				busnl.capNhatNguyenLieu(nl);
-				MessageBox.Show("Cập nhật thành công.", "Thông báo");
-				this.Close();
-			}
-		}
         private void button1_Click(object sender, EventArgs e)
         {
             if (ValidateChildren(ValidationConstraints.Enabled))
             {
-
+                nl.TenNguyenLieu = txtTenNguyenLieu.Text;
+                nl.ThoiGianBaoQuan = Convert.ToInt32(txtThoiGianBaoQuan.Text);
+                nl.DonViTinh = txtDonviTinh.Text;
+                nl.SoLuongToiThieu = Convert.ToInt64(textBox4.Text);
+                nl.GhiChu = textBox5.Text;
+                if (MessageBox.Show("Bạn có chắc muốn cập nhật thông tin mới?", "Cập nhật thông tin", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    busnl.capNhatNguyenLieu(nl);
+                    MessageBox.Show("Cập nhật thành công.", "Thông báo");
+                    this.Close();
+                }
             }
         }
 
