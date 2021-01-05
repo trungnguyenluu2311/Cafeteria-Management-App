@@ -16,5 +16,6 @@ namespace QuanLyQuanCafe.BUS_QLQC
         {
             return DAL_HoaDon.Instance.getDanhSach();
         }
+
     }
 }

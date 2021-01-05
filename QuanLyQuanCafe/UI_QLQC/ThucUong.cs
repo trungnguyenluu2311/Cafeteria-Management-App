@@ -12,6 +12,7 @@ namespace QuanLyQuanCafe
 {
 	public partial class ThucUong : UserControl
 	{
+		public string MaTU;
 		public ThucUong()
 		{
 			InitializeComponent();

@@ -11,9 +11,9 @@ namespace QuanLyQuanCafe.DTO_QCQC
         public string MaCTTU;
         public string MaThucUong;
         public string MaNguyenLieu;
-        public string SoLuong;
+        public int SoLuong;
 
-        public DTO_ChiTietThucUong(string maCTTU, string maThucUong, string maNguyenLieu, string soLuong)
+        public DTO_ChiTietThucUong(string maCTTU, string maThucUong, string maNguyenLieu, int soLuong)
         {
             MaCTTU = maCTTU;
             MaThucUong = maThucUong;

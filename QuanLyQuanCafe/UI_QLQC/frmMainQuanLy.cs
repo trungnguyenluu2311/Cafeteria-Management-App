@@ -39,8 +39,10 @@ namespace QuanLyQuanCafe
         }
 
 		private void buttonQuanLyNguyenLieu_Click(object sender, EventArgs e)
-		{
-            OpenForm(new frmQuanLyNguyenLieu());
+		{ 
+			var qlnvform = new frmQuanLyNguyenLieu();
+			qlnvform.nv = nv;
+            OpenForm(qlnvform);
 		}
 
 		private void buttonBaoCao_Click(object sender, EventArgs e)

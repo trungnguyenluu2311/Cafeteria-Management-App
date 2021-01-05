@@ -27,7 +27,7 @@ namespace QuanLyQuanCafe.DAL_QLQC
             {
                 Dictionary<string, string> param = new Dictionary<string, string>();
 
-                string procedure = "CHITIETTHUCUONG_INSERT";
+                string procedure = "PHIEUNHAPNGUYENLIEU_INSERT";
                 param.Add("@MaNV", pnnl.MaNV);
                 param.Add("@NgayNhap", pnnl.NgayNhap.ToShortDateString());
                 param.Add("@LinkAnh", pnnl.LinkHinhAnhHoaDon);

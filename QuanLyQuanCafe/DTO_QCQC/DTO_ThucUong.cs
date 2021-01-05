@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyQuanCafe.DTO_QCQC
 {
-    class DTO_ThucUong
+    public class DTO_ThucUong
     {
         public string MaThucUong;
         public string TenThucUong;

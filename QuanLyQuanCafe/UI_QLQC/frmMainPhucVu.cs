@@ -40,7 +40,9 @@ namespace QuanLyQuanCafe
 
 		private void buttonDatMon_Click(object sender, EventArgs e)
 		{
-            OpenForm(new frmDatMon());
+            var formDatMon = new frmDatMon();
+            formDatMon.nv = nv;
+            OpenForm(formDatMon);
 		}
 
 

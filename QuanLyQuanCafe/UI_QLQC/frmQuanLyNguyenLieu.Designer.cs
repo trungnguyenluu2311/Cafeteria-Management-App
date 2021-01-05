@@ -44,9 +44,12 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(14, 104);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1260, 570);
             this.dataGridView1.TabIndex = 0;
             // 
@@ -59,6 +62,8 @@
             this.textBox1.TabIndex = 4;
             this.textBox1.Text = "<Nhập tên nguyên liệu>";
             this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
+            this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
+            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // panel1
             // 
@@ -85,6 +90,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(30, 28);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button2
             // 
@@ -125,6 +131,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmQuanLyNguyenLieu";
             this.Text = "QuanLyNguyenLieu";
+            this.Load += new System.EventHandler(this.frmQuanLyNguyenLieu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

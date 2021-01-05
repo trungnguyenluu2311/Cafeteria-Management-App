@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyQuanCafe.DTO_QCQC;
 using QuanLyQuanCafe.DAL_QLQC;
+
 namespace QuanLyQuanCafe.BUS_QLQC
 {
     class BUS_NhanVienPhucVu
@@ -15,6 +16,7 @@ namespace QuanLyQuanCafe.BUS_QLQC
         {
             try
             {
+
                 DTO_HoaDon hd = new DTO_HoaDon("", nv.MaNhanVien, DateTime.Now, 0, false);
                 hd.MaHoaDon = DAL_HoaDon.Instance.themHoaDon(hd);
                 foreach(DTO_ChiTietHoaDon ct in cthd)
@@ -23,6 +25,7 @@ namespace QuanLyQuanCafe.BUS_QLQC
                     DAL_ChiTietHoaDon.Instance.themChiTietHoaDon(ct);
                 }
                 DAL_HoaDon.Instance.tinhtongTienHoaDon(hd.MaHoaDon);
+                
                 return true;
 
             }
@@ -44,5 +47,6 @@ namespace QuanLyQuanCafe.BUS_QLQC
                 return false;
             }
         }
+
     }
 }

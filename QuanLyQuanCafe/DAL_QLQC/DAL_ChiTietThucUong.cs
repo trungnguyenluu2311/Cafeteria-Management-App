@@ -50,7 +50,7 @@ namespace QuanLyQuanCafe.DAL_QLQC
                 string procedure = "CHITIETTHUCUONG_SELECTBYMATU";
                 param.Add("@MaTU", MaTU);
 
-                dt = HandleDB.Instance.ExecuteQueryProcedure(procedure, null);
+                dt = HandleDB.Instance.ExecuteQueryProcedure(procedure, param);
                 return dt;
             }
             catch (Exception e)
@@ -68,7 +68,7 @@ namespace QuanLyQuanCafe.DAL_QLQC
                 string procedure = "CHITIETTHUCUONG_INSERT";
                 param.Add("@MaTU", cttu.MaThucUong);
                 param.Add("@MaNL", cttu.MaNguyenLieu);
-                param.Add("@SoLuong", cttu.SoLuong);
+                param.Add("@SoLuong", cttu.SoLuong.ToString());
 
                 HandleDB.Instance.ExecuteNonQueryProcedure(procedure, param);
             }
@@ -87,7 +87,7 @@ namespace QuanLyQuanCafe.DAL_QLQC
                 param.Add("@MaCTTU", cttu.MaCTTU);
                 param.Add("@MaTU", cttu.MaThucUong);
                 param.Add("@MaNL", cttu.MaNguyenLieu);
-                param.Add("@SoLuong", cttu.SoLuong);
+                param.Add("@SoLuong", cttu.SoLuong.ToString());
 
                 HandleDB.Instance.ExecuteNonQueryProcedure(procedure, param);
             }

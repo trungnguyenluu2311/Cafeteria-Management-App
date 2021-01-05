@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyQuanCafe.DTO_QCQC
 {
-    class DTO_NguyenLieu
+    public class DTO_NguyenLieu
     {
         public string MaNguyenLieu { get; set; }
         public string TenNguyenLieu { get; set; }

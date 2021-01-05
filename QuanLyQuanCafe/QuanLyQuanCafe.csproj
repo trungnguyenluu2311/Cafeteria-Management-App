@@ -55,7 +55,6 @@
     <Compile Include="BUS_QLQC\BUS_PhieuNhapNguyenLieu.cs" />
     <Compile Include="BUS_QLQC\BUS_ThucUong.cs" />
     <Compile Include="DAL_QLQC\DAL_ChiTietHoaDon.cs" />
-    <Compile Include="DAL_QLQC\DAL_ChiTietPhaChe.cs" />
     <Compile Include="DAL_QLQC\DAL_ChiTietPhieuNhap.cs" />
     <Compile Include="DAL_QLQC\DAL_ChiTietThucUong.cs" />
     <Compile Include="DAL_QLQC\DAL_HoaDon.cs" />
@@ -65,7 +64,6 @@
     <Compile Include="DAL_QLQC\DAL_ThucUong.cs" />
     <Compile Include="DAL_QLQC\HandleDB.cs" />
     <Compile Include="DTO_QCQC\DTO_ChiTietHoaDon.cs" />
-    <Compile Include="DTO_QCQC\DTO_ChiTietPhaChe.cs" />
     <Compile Include="DTO_QCQC\DTO_ChiTietPhieuNhap.cs" />
     <Compile Include="DTO_QCQC\DTO_BaoCao.cs" />
     <Compile Include="DTO_QCQC\DTO_ChiTietThucUong.cs" />
@@ -265,7 +263,35 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\americano.jpg" />
   </ItemGroup>

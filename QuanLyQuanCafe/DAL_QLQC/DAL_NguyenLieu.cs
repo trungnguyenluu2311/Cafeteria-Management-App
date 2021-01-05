@@ -47,7 +47,7 @@ namespace QuanLyQuanCafe.DAL_QLQC
                 string procedure = "NGUYENLIEU_SELECTBYNAME";
                 param.Add("@Ten", Ten);
 
-                dt = HandleDB.Instance.ExecuteQueryProcedure(procedure, null);
+                dt = HandleDB.Instance.ExecuteQueryProcedure(procedure, param);
                 return dt;
             }
             catch (Exception e)
