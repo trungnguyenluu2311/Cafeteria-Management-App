@@ -13,7 +13,7 @@ using System.Data;
 
 namespace QuanLyQuanCafe
 {
-    public partial class frmThemNguyenLieuMoi: Form
+    public partial class frmThemNguyenLieuMoi : Form
     {
         BUS_NguyenLieu busnl = new BUS_NguyenLieu();
         BindingList<DTO_NguyenLieu> nlmoi = new BindingList<DTO_NguyenLieu>();
@@ -28,31 +28,101 @@ namespace QuanLyQuanCafe
             dataGridView1.Columns[3].Visible = false;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnThem_Click(object sender, EventArgs e)
         {
-            string TenNL = textBox1.Text;
-            string DonViTinh = textBox3.Text;
-            long SoLuongToiThieu = Convert.ToInt64(textBox4.Text);
-            int ThoiGianBaoQuan = Convert.ToInt32(textBox2.Text);
-            string GhiChu = textBox5.Text;
-            DTO_NguyenLieu nl = new DTO_NguyenLieu("", TenNL,DonViTinh,0,SoLuongToiThieu,ThoiGianBaoQuan,GhiChu);
-            nlmoi.Add(nl);
-            //source.DataSource = nlmoi;
-            
+            if (ValidateChildren(ValidationConstraints.Enabled))
+            {
+                string TenNL = txtTenNguyenLieu.Text;
+                string DonViTinh = txtDonviTinh.Text;
+                long SoLuongToiThieu = Convert.ToInt64(txtSoLuongToiThieu.Text);
+                int ThoiGianBaoQuan = Convert.ToInt32(txtThoiGianBaoQuan.Text);
+                string GhiChu = this.txtGhiChu.Text;
+                DTO_NguyenLieu nl = new DTO_NguyenLieu("", TenNL, DonViTinh, 0, SoLuongToiThieu, ThoiGianBaoQuan, GhiChu);
+                nlmoi.Add(nl);
+                //source.DataSource = nlmoi;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(nlmoi!=null&& dataGridView1.CurrentCell!=null)
+            if (nlmoi != null && dataGridView1.CurrentCell != null)
                 nlmoi.RemoveAt(dataGridView1.CurrentCell.RowIndex);
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnLuu_Click(object sender, EventArgs e)
         {
             foreach (DTO_NguyenLieu nl in nlmoi)
                 busnl.taoNguyenLieu(nl);
             MessageBox.Show("Thêm nguyên liệu thành công");
             this.Close();
+        }
+
+
+
+
+        private void txtThoiGianBaoQuan_Validating(object sender, CancelEventArgs e)
+        {
+            bool convert = int.TryParse(txtThoiGianBaoQuan.Text, out int tg);
+            if (string.IsNullOrWhiteSpace(txtThoiGianBaoQuan.Text))
+            {
+                e.Cancel = true;
+                errorProvider_frmThemNglieuMoi.SetError(txtThoiGianBaoQuan, "Không được để trống mục này!");
+            }
+            else if (!convert)
+            {
+                e.Cancel = true;
+                errorProvider_frmThemNglieuMoi.SetError(txtThoiGianBaoQuan, "Thời gian bảo quản là số nguyên (ngày)");
+            }
+            {
+                e.Cancel = false;
+                errorProvider_frmThemNglieuMoi.SetError(txtThoiGianBaoQuan, "");
+            }
+        }
+        private void txtTenNguyenLieu_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtTenNguyenLieu.Text))
+            {
+                e.Cancel = true;
+                errorProvider_frmThemNglieuMoi.SetError(txtTenNguyenLieu, "Không được để trống mục này!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider_frmThemNglieuMoi.SetError(txtTenNguyenLieu, "");
+            }
+        }
+        private void txtSoLuongToiThieu_Validating(object sender, CancelEventArgs e)
+        {
+            bool convert = int.TryParse(txtSoLuongToiThieu.Text, out int tg);
+
+            if (string.IsNullOrWhiteSpace(txtSoLuongToiThieu.Text))
+            {
+                e.Cancel = true;
+                errorProvider_frmThemNglieuMoi.SetError(txtSoLuongToiThieu, "Không được để trống mục này!");
+            }
+            else if (!convert)
+            {
+                e.Cancel = true;
+                errorProvider_frmThemNglieuMoi.SetError(txtSoLuongToiThieu, "Số lượng tối thiểu là số nguyên (đơn vị tính)");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider_frmThemNglieuMoi.SetError(txtSoLuongToiThieu, "");
+            }
+        }
+        private void txtDonviTinh_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtDonviTinh.Text))
+            {
+                e.Cancel = true;
+                errorProvider_frmThemNglieuMoi.SetError(txtDonviTinh, "Không được để trống mục này!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider_frmThemNglieuMoi.SetError(txtDonviTinh, "");
+            }
         }
     }
 }

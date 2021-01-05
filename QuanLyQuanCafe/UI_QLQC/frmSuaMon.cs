@@ -73,5 +73,10 @@ namespace QuanLyQuanCafe
 				this.Close();
 			}
 		}
-	}
+
+        private void textBox1_Validating(object sender, CancelEventArgs e)
+        {
+
+        }
+    }
 }

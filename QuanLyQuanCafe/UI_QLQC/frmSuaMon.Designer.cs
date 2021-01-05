@@ -28,29 +28,32 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtTenMon = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.errorProvider_frmSuaMon = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_frmSuaMon)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -71,7 +74,7 @@
             this.panel2.Controls.Add(this.textBox3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txtTenMon);
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -112,27 +115,29 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(17, 32);
+            this.label1.Location = new System.Drawing.Point(9, 48);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 25);
-            this.label1.TabIndex = 14;
+            this.label1.Size = new System.Drawing.Size(64, 17);
+            this.label1.TabIndex = 4;
             this.label1.Text = "Tên món";
             // 
-            // textBox1
+            // txtTenMon
             // 
-            this.textBox1.Location = new System.Drawing.Point(185, 31);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(217, 26);
-            this.textBox1.TabIndex = 13;
+            this.txtTenMon.Location = new System.Drawing.Point(128, 48);
+            this.txtTenMon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTenMon.Name = "txtTenMon";
+            this.txtTenMon.Size = new System.Drawing.Size(146, 20);
+            this.txtTenMon.TabIndex = 1;
+            this.txtTenMon.Validating += new System.ComponentModel.CancelEventHandler(this.textBox1_Validating);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(533, 32);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox2.Location = new System.Drawing.Point(352, 48);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(231, 26);
-            this.textBox2.TabIndex = 16;
+            this.textBox2.Size = new System.Drawing.Size(156, 20);
+            this.textBox2.TabIndex = 6;
             // 
             // panel3
             // 
@@ -277,6 +282,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_frmSuaMon)).EndInit();
             this.ResumeLayout(false);
 
 		}
@@ -285,6 +291,9 @@
 
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Panel panel2;
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.TextBox txtTenMon;
+		private System.Windows.Forms.TextBox textBox2;
 		private System.Windows.Forms.Panel panel3;
 		private System.Windows.Forms.Panel panel4;
 		private System.Windows.Forms.TextBox textBox4;
@@ -301,5 +310,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ErrorProvider errorProvider_frmSuaMon;
     }
 }

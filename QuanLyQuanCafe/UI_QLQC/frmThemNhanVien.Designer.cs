@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            this.components = new System.ComponentModel.Container();
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,19 +38,23 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.txtTenNhanVien = new System.Windows.Forms.TextBox();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.txtSdt = new System.Windows.Forms.TextBox();
+            this.txtSoCmnd = new System.Windows.Forms.TextBox();
+            this.txtLuong = new System.Windows.Forms.TextBox();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.errorProvider_frmThemNhanVien = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_frmThemNhanVien)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -149,7 +154,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(188, 175);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Name = "textBox1";
+            this.textBox1.Name = "txtTenNhanVien";
             this.textBox1.Size = new System.Drawing.Size(275, 26);
             this.textBox1.TabIndex = 17;
             // 
@@ -157,7 +162,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(188, 234);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox2.Name = "textBox2";
+            this.textBox2.Name = "txtDiaChi";
             this.textBox2.Size = new System.Drawing.Size(275, 26);
             this.textBox2.TabIndex = 18;
             // 
@@ -165,7 +170,7 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(188, 290);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox3.Name = "textBox3";
+            this.textBox3.Name = "txtSdt";
             this.textBox3.Size = new System.Drawing.Size(275, 26);
             this.textBox3.TabIndex = 19;
             // 
@@ -173,7 +178,7 @@
             // 
             this.textBox4.Location = new System.Drawing.Point(591, 68);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox4.Name = "textBox4";
+            this.textBox4.Name = "txtSoCmnd";
             this.textBox4.Size = new System.Drawing.Size(275, 26);
             this.textBox4.TabIndex = 20;
             // 
@@ -181,7 +186,7 @@
             // 
             this.textBox6.Location = new System.Drawing.Point(591, 121);
             this.textBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox6.Name = "textBox6";
+            this.textBox6.Name = "txtLuong";
             this.textBox6.Size = new System.Drawing.Size(275, 26);
             this.textBox6.TabIndex = 22;
             // 
@@ -190,7 +195,7 @@
             this.textBox7.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.textBox7.Location = new System.Drawing.Point(591, 176);
             this.textBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox7.Name = "textBox7";
+            this.textBox7.Name = "txtMatKhau";
             this.textBox7.Size = new System.Drawing.Size(275, 26);
             this.textBox7.TabIndex = 23;
             // 
@@ -248,20 +253,20 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(275, 26);
             this.dateTimePicker1.TabIndex = 0;
             // 
-            // button1
+            // btnThem
             // 
-            this.button1.AutoSize = true;
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.ForeColor = System.Drawing.Color.OrangeRed;
-            this.button1.Location = new System.Drawing.Point(782, 349);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 38);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "Thêm";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnThem.AutoSize = true;
+            this.btnThem.BackColor = System.Drawing.Color.White;
+            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnThem.ForeColor = System.Drawing.Color.OrangeRed;
+            this.btnThem.Location = new System.Drawing.Point(782, 349);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnThem.Name = "button1";
+            this.btnThem.Size = new System.Drawing.Size(84, 38);
+            this.btnThem.TabIndex = 26;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // button2
             // 
@@ -309,17 +314,19 @@
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.ComboBox comboBox1;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.TextBox textBox3;
-		private System.Windows.Forms.TextBox textBox4;
-		private System.Windows.Forms.TextBox textBox6;
-		private System.Windows.Forms.TextBox textBox7;
+		private System.Windows.Forms.TextBox txtTenNhanVien;
+		private System.Windows.Forms.TextBox txtDiaChi;
+		private System.Windows.Forms.TextBox txtSdt;
+		private System.Windows.Forms.TextBox txtSoCmnd;
+		private System.Windows.Forms.TextBox txtLuong;
+		private System.Windows.Forms.TextBox txtMatKhau;
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.DateTimePicker dateTimePicker1;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button btnThem;
 		private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox5;
+		private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ErrorProvider errorProvider_frmThemNhanVien;
     }
 }
